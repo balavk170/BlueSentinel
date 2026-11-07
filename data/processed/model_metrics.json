@@ -1,7 +1,7 @@
 {
   "region": "global",
-  "n_rows": 23186,
-  "positive_rate": 0.27771068748382643,
+  "n_rows": 34515,
+  "positive_rate": 0.21066203100101405,
   "features": [
     "TSA_DHW",
     "TSA_DHWMax",
@@ -22,23 +22,23 @@
   ],
   "validation": "GroupKFold (5 folds) by ecoregion",
   "model": {
-    "roc_auc": 0.7537885082982182,
-    "pr_auc": 0.5634302100041633
+    "roc_auc": 0.7459443462999382,
+    "pr_auc": 0.5010479419900321
   },
   "baseline_dhw": {
     "feature": "TSA_DHW",
-    "roc_auc": 0.6765684879545292,
+    "roc_auc": 0.6735392672111851,
     "dhw_ge_4": {
-      "recall": 0.2562509706476161,
-      "precision": 0.6013119533527697
+      "recall": 0.24632100123779396,
+      "precision": 0.5266098206409879
     },
     "dhw_ge_8": {
-      "recall": 0.07563286224569032,
-      "precision": 0.6519410977242303
+      "recall": 0.07316737725209738,
+      "precision": 0.562962962962963
     }
   },
   "indonesia_subset": {
-    "n_rows": 937,
-    "roc_auc": 0.7150112263444884
+    "n_rows": 1797,
+    "roc_auc": 0.6803927909916797
   }
 }

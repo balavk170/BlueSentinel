@@ -16,7 +16,7 @@ export default function Footer() {
               decoding="async"
             />
             <span className="font-display text-2xl font-medium tracking-tight text-foreground">
-              ReefSense
+              Blue Sentinel
             </span>
           </div>
           <p className="mt-3 text-sm text-muted-strong">

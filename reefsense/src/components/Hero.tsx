@@ -147,7 +147,7 @@ export default function Hero({ onExplore, alertRecall, surveys, reefCount }: Her
                   bleaching events.{" "}
                 </>
               ) : null}
-              ReefSense predicts bleaching risk for{" "}
+              Blue Sentinel predicts bleaching risk for{" "}
               {reefCount ? `${reefCount.toLocaleString()} reefs` : "every mapped reef"}, focused on
               Indonesia, and explains every estimate.
             </p>

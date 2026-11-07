@@ -67,7 +67,7 @@ function ViewSwitch({ view, onChange }: { view: PanelView; onChange: (view: Pane
       {/* The thumb slides between the two options. */}
       <span
         aria-hidden="true"
-        className="absolute inset-y-1 left-1 w-[calc(50%-0.25rem)] rounded-full bg-primary shadow-[0_6px_16px_-8px_rgba(14,94,140,0.6)] transition-transform duration-500 ease-[cubic-bezier(0.16,1,0.3,1)]"
+        className="absolute inset-y-1 left-1 w-[calc(50%-0.25rem)] rounded-full bg-primary shadow-[0_6px_16px_-8px_rgba(14,94,140,0.6)] transition-transform duration-500 ease-out"
         style={{ transform: view === "expert" ? "translateX(100%)" : "none" }}
       />
       {(["plain", "expert"] as const).map((v) => {
@@ -103,7 +103,7 @@ function ShareButton({ reef }: { reef: Reef }) {
     const link = url.toString();
     try {
       if (navigator.share && window.matchMedia("(pointer: coarse)").matches) {
-        await navigator.share({ title: `${reef.name} on ReefSense`, url: link });
+        await navigator.share({ title: `${reef.name} on Blue Sentinel`, url: link });
         return;
       }
       await navigator.clipboard.writeText(link);

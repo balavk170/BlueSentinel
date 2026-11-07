@@ -31,7 +31,10 @@ from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel, Field
 
-from news import news_for_region
+try:
+    from .news import news_for_region
+except ImportError:  # direct script execution from backend/
+    from news import news_for_region
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA_PATH = Path(os.getenv("REEFCAST_DATA", ROOT / "data/processed/sites_scored.json"))

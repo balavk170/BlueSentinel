@@ -6,7 +6,7 @@ import { hasSupport, languageNote, reachLabel } from "@/lib/support";
 import { cn } from "@/lib/utils";
 
 const DISCLAIMER =
-  "Independent organisations working on reef conservation in this region. ReefSense does not receive or handle donations, and funds may not go to this specific site.";
+  "Independent organisations working on reef conservation in this region. Blue Sentinel does not receive or handle donations, and funds may not go to this specific site.";
 
 /**
  * "Support reef conservation": a compact disclosure under the reef title listing curated

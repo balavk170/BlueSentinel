@@ -86,7 +86,7 @@ export default function Navbar({ active, onNavigate }: NavbarProps) {
       <div
         ref={barRef}
         className={cn(
-          "pointer-events-auto mx-auto max-w-[1240px] border transition-[margin,padding,background-color,border-color,box-shadow,border-radius] duration-500 ease-[cubic-bezier(0.16,1,0.3,1)]",
+          "pointer-events-auto mx-auto max-w-[1240px] border transition-[margin,padding,background-color,border-color,box-shadow,border-radius] duration-500 ease-out",
           floating
             ? "mt-2 rounded-[22px] border-transparent bg-transparent px-4 sm:mt-3 sm:px-8"
             : "mt-0 rounded-2xl border-border/80 bg-white px-3 shadow-[0_16px_40px_-24px_rgba(10,37,64,0.35)] sm:px-5",
@@ -97,11 +97,11 @@ export default function Navbar({ active, onNavigate }: NavbarProps) {
             onClick={() => go("top")}
             className={cn("flex items-center gap-2.5 rounded-md motion-safe:animate-drop-in", FOCUS_RING)}
             style={{ animationDelay: "350ms" }}
-            aria-label="ReefSense home"
+            aria-label="Blue Sentinel home"
           >
             <img
               src="/logo-mark.png"
-              alt="ReefSense"
+              alt="Blue Sentinel"
               width={297}
               height={184}
               className="h-7 w-auto shrink-0"
@@ -110,7 +110,7 @@ export default function Navbar({ active, onNavigate }: NavbarProps) {
             <span
               className="font-display text-[19px] font-medium tracking-tight text-foreground max-[359px]:hidden"
             >
-              ReefSense
+              Blue Sentinel
             </span>
           </button>
 
@@ -128,7 +128,7 @@ export default function Navbar({ active, onNavigate }: NavbarProps) {
                 <span
                   aria-hidden="true"
                   className={cn(
-                    "absolute inset-y-1 rounded-full border transition-[left,width,background-color,border-color] duration-500 ease-[cubic-bezier(0.16,1,0.3,1)]",
+                    "absolute inset-y-1 rounded-full border transition-[left,width,background-color,border-color] duration-500 ease-out",
                     "border-border bg-secondary",
                   )}
                   style={{ left: box.left, width: box.width }}

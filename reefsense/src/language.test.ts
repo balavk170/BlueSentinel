@@ -60,12 +60,12 @@ describe("scientific language", () => {
     }
   });
 
-  it("uses the ReefSense product name", () => {
+  it("uses the Blue Sentinel product name", () => {
     const components = sources
       .filter((s) => s.file.replace(/\\/g, "/").startsWith("components/"))
       .map((s) => s.text)
       .join("\n");
-    expect(components).toContain("ReefSense");
+    expect(components).toContain("Blue Sentinel");
 
     // The old product name must not survive in source or config. The spaced
     // phrase "reef resilience" is the scientific concept and stays allowed.

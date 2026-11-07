@@ -23,7 +23,7 @@ export default function App() {
   return (
     <div className="app">
       <header className="masthead">
-        <h1>ReefCast</h1>
+        <h1>Blue Sentinel</h1>
         <p>Which reefs are about to bleach, and where restoration effort will last.</p>
       </header>
 

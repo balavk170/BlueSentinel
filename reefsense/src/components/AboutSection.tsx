@@ -30,7 +30,7 @@ export default function AboutSection() {
               </h2>
             </Reveal>
             <Reveal as="p" delay={150} className="mt-6 text-base leading-relaxed text-muted-strong">
-              ReefSense is a research-oriented GIS platform that helps scientists and
+              Blue Sentinel is a research-oriented GIS platform that helps scientists and
               restoration teams explore where coral reef environments show stronger potential to
               persist under climate stress. It pairs an interactive map of reefs across Asia with explainable,
               model-based predictions.
